@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import { fetchPosts } from '../actions'
 import _ from 'lodash'
@@ -25,6 +26,11 @@ class PostIndex extends Component {
     console.log(this.props.posts)
     return (
       <div>
+        <div>
+          <Link to="/posts/new">
+            Add a post
+          </Link>
+        </div>
         <h3>Posts</h3>
         <ul>
           {this.renderPosts()}
