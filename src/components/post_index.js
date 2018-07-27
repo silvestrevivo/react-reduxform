@@ -25,7 +25,7 @@ class PostIndex extends Component {
   render () {
     console.log(this.props.posts)
     return (
-      <div>
+      <div className="container">
         <div>
           <Link to="/posts/new">
             Add a post
