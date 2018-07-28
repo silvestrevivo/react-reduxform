@@ -8,7 +8,8 @@ import { connect } from 'react-redux'
 class PostsNew extends Component {
   static propTypes = {
     handleSubmit: PropTypes.func,
-    createPost: PropTypes.func
+    createPost: PropTypes.func,
+    history: PropTypes.func
   }
 
   renderField = (field) => {
@@ -29,7 +30,9 @@ class PostsNew extends Component {
 
   onSubmit = (values) => {
     console.log('submitted it', values)
-    this.props.createPost(values)
+    this.props.createPost(values, () => {
+      this.props.history.push('/')
+    })
   }
 
   render () {
