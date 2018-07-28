@@ -1,7 +1,7 @@
 {
   "name": "react-parcel-starter",
   "version": "1.0.0",
-  "description": "ReactJS project starter developed with ParcelJS. ESlint and PostCSS integration.",
+  "description": "Small ReactJS application to experiment with Redux-Form and React-Router, based on the tutorial from @StephenGrider.",
   "main": "index.html",
   "scripts": {
     "start": "parcel src/index.html",
