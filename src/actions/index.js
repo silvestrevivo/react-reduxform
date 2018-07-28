@@ -36,3 +36,15 @@ export function singlePost (id, callback) {
     payload: request
   }
 }
+
+export const DELETE_POST = 'single_post'
+
+export function deletePost (id, callback) {
+  const request = axios.delete(`${URL}/posts/${id}${API_KEY}`)
+    .then(() => callback())
+
+  return {
+    type: DELETE_POST,
+    payload: request
+  }
+}
