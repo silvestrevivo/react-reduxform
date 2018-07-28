@@ -25,3 +25,14 @@ export function createPost (values, callback) {
     payload: request
   }
 }
+
+export const SINGLE_POST = 'single_post'
+
+export function singlePost (id, callback) {
+  const request = axios.get(`${URL}/posts/${id}${API_KEY}`)
+
+  return {
+    type: SINGLE_POST,
+    payload: request
+  }
+}

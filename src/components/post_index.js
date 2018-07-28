@@ -13,16 +13,19 @@ class PostIndex extends Component {
   renderPosts = () => {
     return _.map(this.props.posts, post => {
       return (
-        <li key={post.id}>
-          <p>{post.title}</p>
-          <p>{post.categories}</p>
-          <p>{post.content}</p>
-        </li>
+        <Link to={`/posts/${post.id}`}>
+          <li key={post.id}>
+            <p>{post.title}</p>
+            <p>{post.categories}</p>
+            <p>{post.content}</p>
+          </li>
+        </Link>
       )
     })
   }
 
   render () {
+    console.log(this.props.posts)
     return (
       <div className="container">
         <div>

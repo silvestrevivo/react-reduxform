@@ -9,7 +9,7 @@ class PostsNew extends Component {
   static propTypes = {
     handleSubmit: PropTypes.func,
     createPost: PropTypes.func,
-    history: PropTypes.func
+    history: PropTypes.object
   }
 
   renderField = (field) => {
