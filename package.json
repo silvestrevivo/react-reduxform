@@ -12,9 +12,9 @@
   },
   "keywords": [
     "react",
-    "starter",
-    "parcel",
-    "testing"
+    "redux",
+    "redux-form",
+    "react-router-dom"
   ],
   "author": "@silvestrevivo",
   "license": "ISC",
